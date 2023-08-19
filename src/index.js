@@ -1,4 +1,4 @@
-const db = require("./database/db");
+const { connect } = require("./database/db");
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
@@ -13,6 +13,7 @@ app.use(
     extended: true
   })
 );
+
 
 
 const port = process.env.PORT || 3000
